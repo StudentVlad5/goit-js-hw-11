@@ -23,6 +23,7 @@ ref.searchButton.addEventListener('click',searchPhotos)
 function searchPhotos(e) {
     e.preventDefault();
     ref.searchButton.disabled = true;
+    ref.searchButton.style.backgroundColor = "gray";
     if(checkSearchByName === ref.searchInput.value)
         {ref.page +=1}
         else{ref.page = 1; checkSearchByName = ref.searchInput.value};
@@ -76,6 +77,7 @@ new SimpleLightbox('.gallery__link', {
     })
 
     ref.searchButton.disabled = false;
+    ref.searchButton.style.backgroundColor = "#096710";
 })
 fetch(error=>console.log("Sorry, there are no images matching your search query. Please try again."))}
 
