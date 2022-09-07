@@ -5,6 +5,9 @@ import "simplelightbox/dist/simple-lightbox.min.css";
 let stringForSearch = '';
 export async function loadMore (e) {
     e.preventDefault();
+    ref.searchButton.disabled = true;
+    ref.searchButton.style.backgroundColor = "gray";
+
     ref.page +=1;
     let option ='';
     stringForSearch = `${ref.URL}?key=${ref.key.toString()}
@@ -57,5 +60,8 @@ export async function loadMore (e) {
           behavior: "smooth",
         });
     })
-    await fetch(error=>console.log("Sorry, there are no images matching your search query. Please try again."))}
+    await fetch(error=>console.log("Sorry, there are no images matching your search query. Please try again."))
+    ref.searchButton.disabled = false;
+    ref.searchButton.style.backgroundColor = "#096710";
+}
 
