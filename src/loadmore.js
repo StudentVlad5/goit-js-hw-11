@@ -21,7 +21,7 @@ export async function loadMore (e) {
     // робимо get запит
     const response = await fetch(stringForSearch);
     await response.json()
-    .then((data)=>{console.dir(data);
+    await then((data)=>{console.dir(data);
     
     data.hits.forEach(key =>{
         option += `<li class="gallery__item">

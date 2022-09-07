@@ -25,7 +25,7 @@ export async function searchPhotos(e) {
 
 const response = await fetch(stringForSearch);
 await response.json()
-.then((data)=>{console.dir(data);
+await then((data)=>{console.dir(data);
 
 if(data.totalHits === 0 ){Notiflix.Notify.failure("Sorry, there are no images matching your search query. Please try again.")}
 else {Notiflix.Notify.success(`"Hooray! We found ${data.total} images. Now you can see next ${data.hits.length} on the page ${ref.page}`);
