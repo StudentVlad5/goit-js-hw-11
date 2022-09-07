@@ -63,4 +63,4 @@ new SimpleLightbox('.gallery__link', {
     ref.searchButton.disabled = false;
     ref.searchButton.style.backgroundColor = "#096710";
 })
-await fetch(error=>console.log("Sorry, there are no images matching your search query. Please try again."))}
+}

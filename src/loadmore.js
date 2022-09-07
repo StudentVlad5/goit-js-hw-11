@@ -60,7 +60,7 @@ export async function loadMore (e) {
           behavior: "smooth",
         });
     })
-    await fetch(error=>console.log("Sorry, there are no images matching your search query. Please try again."))
+    
     ref.searchButton.disabled = false;
     ref.searchButton.style.backgroundColor = "#096710";
 }
