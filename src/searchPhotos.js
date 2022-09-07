@@ -8,6 +8,7 @@ export async function searchPhotos(e) {
     e.preventDefault();
     ref.searchButton.disabled = true;
     ref.searchButton.style.backgroundColor = "gray";
+    ref.searchButton.disabled = true;
     if(checkSearchByName === ref.searchInput.value)
         {ref.page +=1}
         else{ref.page = 1; checkSearchByName = ref.searchInput.value};
@@ -60,7 +61,7 @@ new SimpleLightbox('.gallery__link', {
     docClose: "true",
     captionDelay: 250, 
     })
-
+    ref.searchButton.disabled = false;
     ref.searchButton.disabled = false;
     ref.searchButton.style.backgroundColor = "#096710";
 })
