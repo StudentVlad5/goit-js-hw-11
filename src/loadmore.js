@@ -52,8 +52,9 @@ export async function loadMore (e) {
         close:	"true",
         docClose: "true",
         captionDelay: 250, 
-        })
-    
+        }
+        )
+        
     const { height: cardHeight } = document.querySelector(".gallery__link").firstElementChild.getBoundingClientRect();
         window.scrollBy({
           top: cardHeight * 3,

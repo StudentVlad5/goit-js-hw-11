@@ -60,6 +60,7 @@ new SimpleLightbox('.gallery__link', {
     close:	"true",
     docClose: "true",
     captionDelay: 250, 
+    fixedClass: "sl-fixed",
     })
     ref.searchButton.disabled = false;
     ref.searchButton.disabled = false;
