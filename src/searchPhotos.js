@@ -63,7 +63,7 @@ new SimpleLightbox('.gallery__link', {
     fixedClass: "sl-fixed",
     })
     ref.searchButton.disabled = false;
-    ref.searchButton.disabled = false;
     ref.searchButton.style.backgroundColor = "#096710";
-})
+}
+)
 }
